@@ -1,13 +1,19 @@
 package main;
 
-public abstract class Servicio {
-	private String oficio;
-	boolean urgente;
+import java.time.LocalDate;
 
-	public int costo(int plus) {
-		// TODO Auto-generated method stub
-		return 0;
+public class Servicio{
+	protected String oficio;
+	boolean urgente;
+	protected LocalDate fechaInicio, fechaFin;
+	
+	
+	public String getOficio() {
+		return oficio;
 	}
 	
+	public LocalDate getFechaInicio() {
+		return fechaInicio;
+	}
 	
 }
